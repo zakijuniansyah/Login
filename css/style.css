@@ -1,51 +1,55 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+
 body {
-  background: url(/img/indonesia.jpg);
-  background-attachment: fixed;
+  background: url(/img/indonesia.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-position: 0 -400px;
 }
+
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  height: auto;
 }
+
 .form-holder {
   background: #000;
   width: 450px;
   max-width: 90%;
-  padding: 35px 0px;
+  padding: 35px 0;
   opacity: 0.7;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px white;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
 }
+
 .logo {
   display: block;
   width: 100px;
-  margin: 0px auto;
+  margin: 0 auto;
   border-radius: 20px;
   background: #222;
   padding: 10px;
 }
+
 .form-holder h2 {
   color: #ddd;
   padding: 10px;
   text-align: center;
   font-size: 22px;
 }
+
 .form .form-group {
   width: 90%;
   margin: 20px auto;
   padding: 10px;
   position: relative;
 }
+
 .form-group input {
   width: 100%;
   padding: 10px;
@@ -58,6 +62,7 @@ body {
   border-radius: 5px;
   padding-left: 40px;
 }
+
 .form-group img {
   width: 26px;
   position: absolute;
@@ -76,22 +81,29 @@ body {
   border: 2px solid #777;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
+
 .form-group input:focus {
   background: #333;
   border-color: #0088ff;
 }
+
 .form-group button:hover {
   background: #333;
 }
+
 .form-group a {
   color: #999;
   text-decoration: none;
   font-size: 14px;
+  transition: color 0.3s ease;
 }
+
 .form-group a:hover {
   color: #555;
 }
+
 .form-group .right-link {
   float: right;
 }
